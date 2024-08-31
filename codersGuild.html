@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder's Guild</title>
+
+    <link rel="stylesheet" href="./FRONTEND/CSS/coder.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/about.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/learn.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/end.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/test.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/chat-bot.css">
+    <link rel="stylesheet" href="./FRONTEND/CSS/more.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>    
+
+  <header class="header-nav" id="header-nav">
+    <nav class="nav container-nav">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="bi bi-arrow-up-right"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link" onclick="openAboutModal(event)">
+              <i class="bi bi-arrow-up-right"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#learning" class="nav__link">
+              <i class="bi bi-arrow-up-right"></i>
+              <span>Learn</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./FRONTEND/HTML/register.html" class="nav__link">
+              <i class="bi bi-arrow-up-right"></i>
+              <span>Join</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#oppor" class="nav__link">
+              <i class="bi bi-arrow-up-right"></i>
+              <span>Opportunities</span>
+            </a>
+          </li>
+        </ul>
+
+      <!-- Toggle End -->
+    </nav>
+  </header>
+
+    <div class="carosel-container">
+        <div class="carousel">
+            <div class="list">
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg2.png" title="bkgImage">
+                    <div class="content">
+                        <div class="author">CITCS</div>
+                        <div class="title">Coder's Guild</div>
+                        <div class="topic">Welcome</div>
+                        <div class="des">
+                            - Collaborate, learna and get opportunities!            
+                        </div>
+                        <button class="button" id="scroll-button" data-text="Awesome">
+                          <span class="actual-text">&nbsp;Lets_Go!&nbsp;</span>
+                          <span aria-hidden="true" class="hover-text">&nbsp;Lets_Go!&nbsp;</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg3.png" title="bkgImage">
+                    <div class="content">
+                        <div class="author">CITCS</div>
+                        <div class="title">Coder's Guild</div>
+                        <div class="topic">Knowledge</div>
+                        <div class="des">
+                            - Gain deeper knowledge and wisdom in the field of technology.
+                        </div>
+                        <button class="button" id="scroll-button" data-text="Awesome">
+                          <span class="actual-text">&nbsp;Lets_Go!&nbsp;</span>
+                          <span aria-hidden="true" class="hover-text">&nbsp;Lets_Go!&nbsp;</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg4.png" title="bkgImage">
+                    <div class="content">
+                        <div class="author">CITCS</div>
+                        <div class="title">Coder's Guild</div>
+                        <div class="topic">Insights</div>
+                        <div class="des">
+                            - Deepen your understanding and get new information in the world of tech!
+                        </div>
+                        <button class="button" id="scroll-button" data-text="Awesome">
+                          <span class="actual-text">&nbsp;Lets_Go!&nbsp;</span>
+                          <span aria-hidden="true" class="hover-text">&nbsp;Lets_Go!&nbsp;</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg5.jpg" title="bkgImage">
+                    <div class="content">
+                        <div class="author">CITCS</div>
+                        <div class="title">Coder's Guild</div>
+                        <div class="topic">Information</div>
+                        <div class="des">
+                            - Obtain exclusive information and knowledge in the tech industry!
+                        </div>
+                        <button class="button" id="scroll-button" data-text="Awesome">
+                          <span class="actual-text">&nbsp;Lets_Go!&nbsp;</span>
+                          <span aria-hidden="true" class="hover-text">&nbsp;Lets_Go!&nbsp;</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg6.png" title="bkgImage">
+                    <div class="content">
+                        <div class="author">CITCS</div>
+                        <div class="title">Coder's Guild</div>
+                        <div class="topic">Requirements</div>
+                        <div class="des">
+                            - Join now at coder's guild.
+                        </div>
+                        <button class="button" id="scroll-button" data-text="Awesome">
+                          <span class="actual-text">&nbsp;Lets_Go!&nbsp;</span>
+                          <span aria-hidden="true" class="hover-text">&nbsp;Lets_Go!&nbsp;</span>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg2.png">
+                    <div class="content">
+                        <div class="title">
+                            Welcome
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg3.png">
+                    <div class="content">
+                        <div class="title">
+                           Knowledge
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg4.png">
+                    <div class="content">
+                        <div class="title">
+                           Insights
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg5.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Information
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./FRONTEND/IMAGES/bkg6.png">
+                    <div class="content">
+                        <div class="title">
+                            Requirements
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    </div>
+
+        <div class="more-wrapper">
+          <div class="more-container" id="join-now">
+            <div class="who-can-join">
+              <h1>Who Can Join?</h1>
+            </div>
+            <div class="container-join">
+              <div class="img box-1" data-text="IT" style="background-image: url(./FRONTEND/IMAGES/user1.jpg);"></div>
+              <div class="img box-2" data-text="Computer_Science" style="background-image: url(./FRONTEND/IMAGES/user2.jpg);"></div>
+              <div class="img box-3" data-text="Computer_Engineering" style="background-image: url(./FRONTEND/IMAGES/user3.jpg);"></div>
+              <div class="img box-4" data-text="Multi_Media" style="background-image: url(./FRONTEND/IMAGES/user4.jpg);"></div>
+              <div class="img box-5" data-text="More" style="background-image: url(./FRONTEND/IMAGES/user5.jpg);"></div>
+          </div>
+          </div>
+        </div>
+
+        <div class="about-wrapper">
+            <div class="about-container">
+                <div class="code-editor">
+                    <div class="header">
+                        <button onclick="showContent('html')"><span class="title">HTML</span></button>
+                        <button onclick="showContent('css')"><span class="title">CSS</span></button>
+                        <button onclick="showContent('js')"><span class="title">JS</span></button>
+
+                    </div>
+
+                    <div class="html">
+                        <!--In the js File-->
+                    </div>
+                    <div class="css">
+                        <div class="editor-content">
+                            <code class="code">
+                                <p><span class="color-0">What-is-coders-guild</span> <span>{</span></p>
+                    
+                                <p class="property">
+                                    <span class="color-2">What</span><span>:</span>
+                                    <span class="color-1">Coder's Guild is a specialized University club specifically tailored for students in the College of Information Technology and Computer Science (CITCS). This club aims to create a community where like-minded individuals with a passion for technology and innovation can come together to collaborate, learn, and share their knowledge.</span>;
+                                </p>
+                                <p class="property">
+                                    <span class="color-2">How</span><span>:</span>
+                                    <span class="color-preview-1"></span><span class="">It's a club designed for those who have a strong interest in technology, programming, and computing. The Coder's Guild provides a platform for students to enhance their skills, work on projects, and participate in tech-related events and competitions, fostering both academic and practical growth in the field of technology.</span>;
+                                </p>
+                                
+                                <span>}</span>
+                            </code>
+                            <code class="code">
+                                <p><span class="color-0">Information</span> <span>{</span></p>
+
+                                <p class="property">
+                                    <span class="color-2">Join</span><span>:</span>
+                                    <span class="color-1">The club is open to all students of the University, particularly those enrolled in CITCS, as it aims to cultivate a supportive environment for developing technical skills and knowledge. Students interested in joining can become members by expressing their interest and meeting any club requirements or prerequisites set by the club’s administration.
+                                </p>
+                                <p class="property">
+                                    <span class="color-2">Filler</span>&nbsp;<span>{</span>
+                                    <span class="">
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;max-width: 1000px;
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #1d1e22;
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 8px;
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 2px;
+                                    </span>
+                                    <br><span>}</span>
+                                </p>
+                                
+                                <p class="property">
+                                    <span class="color-2">Contact</span><span>:</span>
+                                    <span class="color-1">To get more information about joining the Coder's Guild or to learn more about its activities and membership benefits, you can contact a professor or an academic advisor in the CITCS department, who will provide guidance and details on how to become a member and participate in the club's various initiatives.</span>;
+                                </p>
+                                <span>}</span>
+                            </code>
+                        </div>
+                    </div>
+                    
+                    <div  class="js">
+                        <div class="editor-content">
+                            <code class="code">
+                                <p><span class="color-0">function codersGuild ()</span> <span>{</span></p>
+                        
+                                <p class="property">
+                                    <span class="color-2">Let what </span><span>= </span>
+                                    <span class="color-1">"Coder's Guild is a specialized University club specifically tailored for students in the College of Information Technology and Computer Science (CITCS). This club aims to create a community where like-minded individuals with a passion for technology and innovation can come together to collaborate, learn, and share their knowledge.";</span>
+                                </p>
+                                <p class="property">
+                                    <span class="color-2">var how </span><span>= </span>
+                                    <span class="color-1">"It's a club designed for those who have a strong interest in technology, programming, and computing. The Coder's Guild provides a platform for students to enhance their skills, work on projects, and participate in tech-related events and competitions, fostering both academic and practical growth in the field of technology.";</span>
+                                </p>
+                                <p class="property">
+                                    <span class="color-2">const join </span><span>= </span>
+                                    <span class="color-1">"The club is open to all students of the University, particularly those enrolled in CITCS, as it aims to cultivate a supportive environment for developing technical skills and knowledge. Students interested in joining can become members by expressing their interest and meeting any club requirements or prerequisites set by the club’s administration.";</span>
+                                </p>
+                                 <p class="property">
+                                    <span class="color-2">Filler</span><span>: </span>
+                                    <span>{</span>
+                                    <span class="color-1">
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;"maxWidth": "1000px",
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;"backgroundColor": "#1d1e22",
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;"boxShadow": "0px 4px 30px rgba(0, 0, 0, 0.5)",
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;"borderRadius": "8px",
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;"padding": "2px"
+                                    </span>
+                                    <br><span>}</span>,
+                                </p>
+                                <p class="property">
+                                    <span class="color-2">Contact</span><span>: </span>
+                                    <span class="color-1">"To get more information about joining the Coder's Guild or to learn more about its activities and membership benefits, you can contact a professor or an academic advisor in the CITCS department, who will provide guidance and details on how to become a member and participate in the club's various initiatives."</span>
+                                </p>
+                                <span>}</span>;
+                            </code>
+                        </div>
+                    </div>
+  
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="learn-wrapper">
+            <div class="learn-container" id="learning">
+                <div class="big-container">         
+                    <div class="card-learn">
+                        <div class="tools">
+                          <div class="circle">
+                            <span class="red box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="yellow box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="green box"></span>
+                          </div>
+                        </div>
+                        <div class="title-learn">
+                            <h1>Learn New Things</h1>
+                        </div>
+                        <div class="cube-content">
+                                <div class="cube-container">
+                                    <div class="cube">
+                                      <div style="--x:-1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:0; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                    </div>
+                                    <div class="cube">
+                                      <div style="--x:-1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:0; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                    </div>
+                                    <div class="cube">
+                                      <div style="--x:-1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:0; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                      <div style="--x:1; --y:0;">
+                                        <span style="--i:3;"></span>
+                                        <span style="--i:2;"></span>
+                                        <span style="--i:1;"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="small-container">
+                    <div class="card-learn">
+                      <div class="tools">
+                        <div class="circle">
+                          <span class="red box"></span>
+                        </div>
+                        <div class="circle">
+                          <span class="yellow box"></span>
+                        </div>
+                        <div class="circle">
+                          <span class="green box"></span>
+                        </div>
+                      </div>
+                      <div class="card__content">
+                        <div class="title-learn">
+                            <h2>Problem Solving</h2>
+                        </div>
+                        <br>
+                        <div class="editor-content">
+                            <code class="code">
+                                <p><span class="color-0">What-is-problem-solving</span> <span>{</span></p>
+                    
+                                <p class="property">
+                                    <span class="color-2">Meaning</span><span>:</span>
+                                    <span class="color-1">Enhance your ability to think critically and solve technical challenges through coding projects and exercises.</span>;
+                                </p>
+                                <span>}</span>
+                            </code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-learn">
+                        <div class="tools">
+                          <div class="circle">
+                            <span class="red box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="yellow box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="green box"></span>
+                          </div>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content">
+                                <div class="title-learn">
+                                    <h2>Cognitive Thinking</h2>
+                                </div>
+                                <br>
+                                <div class="editor-content">
+                                    <code class="code">
+                                        <p><span class="color-0">What-is-cognition</span> <span>{</span></p>
+                            
+                                        <p class="property">
+                                            <span class="color-2">Meaning</span><span>:</span>
+                                            <span class="color-1">Develop analytical thinking and logical reasoning skills by engaging in activities and competitions that push your cognitive limits.</span>;
+                                        </p>
+                                        <span>}</span>
+                                    </code>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="card-learn">
+                        <div class="tools">
+                          <div class="circle">
+                            <span class="red box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="yellow box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="green box"></span>
+                          </div>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content">
+                                <div class="title-learn">
+                                    <h2>UX/UI Design</h2>
+                                </div>
+                                <br>
+                        <div class="editor-content">
+                            <code class="code">
+                                <p><span class="color-0">What-is-UI/UX</span> <span>{</span></p>
+                    
+                                <p class="property">
+                                    <span class="color-2">Meaning</span><span>:</span>
+                                    <span class="color-1">Understand the principles of creating visually appealing and user-friendly interfaces for digital products.</span>;
+                                </p>
+                                <span>}</span>
+                            </code>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="card-learn">
+                        <div class="tools">
+                          <div class="circle">
+                            <span class="red box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="yellow box"></span>
+                          </div>
+                          <div class="circle">
+                            <span class="green box"></span>
+                          </div>
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content">
+                                <div class="title-learn">
+                                    <h2>Programming Languages</h2>
+                                </div>
+                                <br>
+                        <div class="editor-content">
+                            <code class="code">
+                                <p><span class="color-0">What-is-programming</span> <span>{</span></p>
+                    
+                                <p class="property">
+                                    <span class="color-2">Meaning</span><span>:</span>
+                                    <span class="color-1">Learn different programming languages like Python, JavaScript, Java, and C++ to develop software and solve complex problems.</span>;
+                                </p>
+                                <span>}</span>
+                            </code>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="end-wrapper">
+          <div class="title-end-container">
+            <div class="title-end">
+                <h1> Get Opportunities </h1>
+            </div>
+        </div>
+            <div class="end-container" id="oppor">
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg6.PNG">
+                        </div>
+                        <p class="card-title-end">Contests</p>
+                        <p class="card-body-end">
+                            Obtain opportunities to represent the university through contest
+                        </p>
+                    </div>
+                </div>
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg8.png">
+                        </div>
+                        <p class="card-title-end">Collaborations</p>
+                        <p class="card-body-end">
+                            Collab with other departments or collabration with the animators guild
+                        </p>
+                    </div>
+                </div>
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg7.png">
+                        </div>
+                        <p class="card-title-end">Events</p>
+                        <p class="card-body-end">
+                            Get notification and invitation into limited and exclusive events of the college.
+                        </p>
+                    </div>
+                </div>
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg4.png">
+                        </div>
+                        <p class="card-title-end">Hackathons</p>
+                        <p class="card-body-end">
+                            Opportunities to join a hackathon with the support of the department.
+                        </p>
+                    </div>
+                </div>
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg3.png">
+                        </div>
+                        <p class="card-title-end">Seminars</p>
+                        <p class="card-body-end">
+                            Deepen your knowledge with seminars from specials guest and professors.
+                        </p>
+                    </div>
+                </div>
+                <div class="article-containers">
+                    <div class="card-end">
+                        <div class="card-image-end">
+                            <img alt="img" src="./FRONTEND/IMAGES/bkg5.jpg">
+                        </div>
+                        <p class="card-title-end">Certifications</p>
+                        <p class="card-body-end">
+                            Obtain opportunities to be take certifications examination.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="radio-buttons">
+            <div class="collapsible-button">+</div>
+            <ul class="example-2">
+              <li class="icon-content">
+                <a data-social="Chat-Bot" aria-label="Chat-Bot" onclick="openChatbotModal(event)">
+                  <div class="filled"></div>
+                  <i class="fa-solid fa-robot"></i>
+                </a>
+                <div class="tooltip">Chat-Bot</div>
+              </li>
+              <li class="icon-content">
+                <a data-social="About" aria-label="About" onclick="openAboutModal(event)">
+                  <div class="filled"></div>
+                  <i class="fa-solid fa-shield-halved"></i>
+                </a>
+                <div class="tooltip">Info</div>
+              </li>
+              <li class="icon-content">
+                <a data-social="Join" aria-label="Join" href="./FRONTEND/HTML/register.html">
+                  <div class="filled"></div>
+                  <i class="fa-solid fa-address-card"></i>
+                </a>
+                <div class="tooltip">Join</div>
+              </li>
+              <li class="icon-content">
+                <a data-social="Test-IT" aria-label="Test-IT" onclick="openTestItModal(event)">
+                  <div class="filled"></div>
+                  <i class="fa-solid fa-microchip"></i>
+                </a>
+                <div class="tooltip">Test-IT</div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="chatbotModal" class="chatbot-modal">
+            <div class="chatbot-container">
+              <div class="chatbot-header">
+                <h2>Chat with Coders Guild Bot</h2>
+                <span class="close" onclick="closeChatbotModal()">&times;</span>
+              </div>
+              <div class="chatbot-chat-window">
+                <div class="chatbot-message chatbot-bot">
+                  <p>Welcome to Coders Guild! How can I assist you today?</p>
+                </div>
+              </div>
+              <div class="chatbot-input-area">
+                <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="aboutModal" class="modal">
+            <div class="modal-container">
+              <div class="modal-header">
+                <h2>About Coders Guild</h2>
+                <span class="close" onclick="closeAboutModal()">&times;</span>
+              </div>
+              <div class="modal-content">
+                <p>
+                  <b>Joining the Coder Guild</b> is straightforward and open to all students within the CITCS department. Here’s how you can become a member:
+                  <br>
+                  <br>
+                  <b>Ask the CITCS Department or Professors: </b>Reach out to your CITCS department office or speak directly with your professors who are involved with the guild. They can provide you with information about joining and any upcoming events or meetings.
+                  <br>
+                  <br>
+                  <b>Contact the Organizers:</b> Look for announcements or posters around the campus, especially within the CITCS buildings, that list the organizers' contact information. You can directly approach them to express your interest in joining.
+                  <br>
+                  <br>
+                  <b>Scan the QR Code:</b> There are QR codes displayed on bulletin boards and around the CITCS department that you can scan with your phone. This will direct you to an online form or provide you with more details on how to join the guild.
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+         
+<!-- Test-IT Modal -->
+<div id="testItModal" class="modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>Test-IT: Coding Challenges</h2>
+        <span class="close" onclick="closeTestItModal()">&times;</span>
+      </div>
+      <div class="modal-content">
+        <!-- Language Selection Buttons -->
+        <div class="language-buttons">
+          <button onclick="showProblem('html')">HTML</button>
+          <button onclick="showProblem('css')">CSS</button>
+          <button onclick="showProblem('js')">JavaScript</button>
+        </div>
+  
+        <!-- HTML Problem -->
+        <div class="problem" id="htmlProblem" style="display:none;">
+          <h3>HTML Problem:</h3>
+          <p>Fix the HTML code to correctly display an image:</p>
+          <pre>&lt;img href="image.jpg" alt="description"&gt;</pre>
+          <textarea id="htmlAnswer" placeholder="Write your corrected HTML code here..."></textarea>
+        </div>
+  
+        <!-- CSS Problem -->
+        <div class="problem" id="cssProblem" style="display:none;">
+          <h3>CSS Problem:</h3>
+          <p>Write CSS to make a paragraph text bold and center it:</p>
+          <textarea id="cssAnswer" placeholder="Write your CSS code here..."></textarea>
+        </div>
+  
+        <!-- JavaScript Problem -->
+        <div class="problem" id="jsProblem" style="display:none;">
+          <h3>JavaScript Problem:</h3>
+          <p>Write JavaScript to change the text of a paragraph to "Hello, World!":</p>
+          <pre>document.getElementById("demo").____ = "Hello, World!";</pre>
+          <textarea id="jsAnswer" placeholder="Write your JavaScript code here..."></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <button onclick="checkTestItAnswers()">Submit</button>
+        <div id="testResult"></div>
+      </div>
+    </div>
+  </div>
+        
+
+    <div class="card">
+        <div class="wrap">
+            <div class="terminal">
+            <hgroup class="head">
+                <p class="title-card">
+                <svg
+                    width="16px"
+                    height="16px"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                >
+                    <path
+                    d="M7 15L10 12L7 9M13 15H17M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z"
+                    ></path>
+                </svg>
+                Terminal
+                </p>
+
+                <button class="copy_toggle" tabindex="-1" type="button">
+                <svg
+                    width="16px"
+                    height="16px"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                >
+                    <path
+                    d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+                    ></path>
+                    <path
+                    d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+                    ></path>
+                </svg>
+                </button>
+            </hgroup>
+
+            <div class="body-card">
+                <pre class="pre">          <code>-&nbsp;</code>
+                <code>npx&nbsp;</code>
+                <code class="cmd" data-cmd="@Welcome-User"></code>
+                </pre>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background_container">
+      <div class="slides fade" style="background-image: url('./FRONTEND/IMAGES/bkg2.png');"></div>
+      <div class="slides fade" style="background-image: url('./FRONTEND/IMAGES/bkg4.png');"></div>
+      <div class="slides fade" style="background-image: url('./FRONTEND/IMAGES/bkg5.png');"></div>
+      <div class="slides fade" style="background-image: url('./FRONTEND/IMAGES/bkg6.png');"></div>
+    </div>
+
+
+    <script src="./FRONTEND/JS/coders.js"></script>
+    <script src="./FRONTEND/JS/chat-bot.js"></script>
+    <script src="./FRONTEND/JS/about.js"></script>
+    <script src="./FRONTEND/JS/test.js"></script>
+</body>
+</html>

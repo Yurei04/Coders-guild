@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Coder's Guild</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+    <div class="join-container">
+        <h2>Join Coder's Guild</h2>
+        <form id="joinForm" onsubmit="return validateJoinForm()">
+          <label for="studentEmail">Student Email:</label>
+          <input type="email" id="studentEmail" required>
+          
+          <label for="studentNumber">Student Number:</label>
+          <input type="text" id="studentNumber" required>
+          
+          <label for="studentName">Name:</label>
+          <input type="text" id="studentName" required>
+          
+          <label for="course">Course:</label>
+          <input type="text" id="course" required>
+          
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="background_container">
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg3.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg4.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg5.png');"></div>
+        <div class="slides fade" style="background-image: url('../IMAGES/bkg6.png');"></div>
+      </div>
+
+      <script src="../JS/register.js"></script>
+</body>
+</html>
