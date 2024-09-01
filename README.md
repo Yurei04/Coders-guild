@@ -1,5 +1,5 @@
 ## **Overview**
-This is a conceptual website of the coder guild of the College of Information Technology and Computer Science club/organization.
+This is a conceptual website of the coder's guild of the College of Information Technology and Computer Science club/organization.
 
 ## Inspiration
 
