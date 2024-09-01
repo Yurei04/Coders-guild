@@ -860,6 +860,7 @@ ul {
   bottom: 20px;
   left: 20px;
   z-index: 10;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
